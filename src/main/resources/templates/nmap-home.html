@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Exemplo de NavBar com Bootstrap</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: #f2f2f2;">
+	<div th:replace="fragments/navbar :: navbar"></div>
+	<div class="container-fluid">
+		<div class="row">
+			<div th:replace="fragments/aside :: aside"></div>
+		
+			<div class="card ml-5 col-8 mt-3 p-0">
+				<div class="card-header">
+					<h1>Nmap Scan</h1>
+				</div>
+				<div class="col-6 mt-4">
+					<form method="post" th:action="@{/nmap}">
+						<label>IP:</label>
+						<input class="form-control" type="text" name="ip"><br>
+						<!--	<label>Porta:</label>
+						<input class="form-control" type="text" name="port"><br>-->
+						<button class="btn btn-secondary" type="submit">Verficar portas abertas</button>
+						<a class="btn btn-danger" th:href="@{/nmap}">Parar varredura</a>
+
+					</form>
+				</div>
+				<ul class="list-group lista-portas">
+					<li class="list-group-item"><span id="output"></span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<style>
+	body {
+		font-family: 'Roboto Slab', serif;
+		font-family: Roboto, sans-serif;
+	}
+
+	.list-group-item:hover {
+		background-color: #6f42c1;
+		color: #fff;
+	}
+</style>
+
+<script>
+	function updateOutput() {
+		fetch('/get-output')
+			.then(response => response.text())
+			.then(text => {
+				document.getElementById('output').innerText = text;
+			});
+	}
+	setInterval(updateOutput, 1000);
+</script>
+
+</html>

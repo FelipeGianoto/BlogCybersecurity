@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Exemplo de NavBar com Bootstrap</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: #f2f2f2;">
+	<div th:replace="fragments/navbar :: navbar"></div>
+	<div class="container-fluid">
+		<div class="row">
+			<div th:replace="fragments/aside :: aside"></div>
+			<div class="card ml-5 col-8 mt-3 p-0">
+				<div class="card-header" style="display: flex; justify-content: space-between;">
+					<h1>Linux</h1>
+					<input class="form-control col-5 mt-3" placeholder="Filtre por Titulo..." id="filtro-titulo"/>
+				</div>
+				<div class="mt-4 ml-4">
+					<p class="ml-4"><strong id="titulo">O Linux é um sistema operacional de código aberto baseado em Unix. Ele foi
+							criado
+							por Linus
+							Torvalds em 1991 e é conhecido por sua estabilidade, segurança e flexibilidade. O Linux é
+							amplamente utilizado em servidores, dispositivos embarcados, supercomputadores e sistemas de
+							desktop.</strong></p>
+					<ul>
+						<li><strong id="titulo">Distribuições:</strong> cada uma com suas próprias
+							características e ferramentas. Algumas das distribuições mais populares incluem Ubuntu,
+							Fedora,
+							Debian e CentOS.
+						</li><br>
+						<li><strong id="titulo">Terminal:</strong> Uma das principais características do Linux é que ele oferece uma
+							interface de linha de comando
+							(terminal) poderosa e personalizável que permite aos usuários executar uma ampla variedade
+							de
+							tarefas.
+						</li><br>
+						<li><strong id="titulo">Pacotes e repositórios:</strong> O Linux usa um sistema de gerenciamento de pacotes
+							para instalar e atualizar software. Os pacotes
+							são baixados de repositórios online mantidos pelas distribuições Linux.
+						</li><br>
+						<li><strong id="titulo">Segurança:</strong> Linux é conhecido por sua segurança, com muitas distribuições
+							Linux oferecendo ferramentas de
+							segurança integradas, como firewalls e sistemas de criptografia.
+						</li><br>
+						<li><strong id="titulo">Personalização:</strong> O Linux oferece muitas opções de personalização para
+							usuários avançados, incluindo a capacidade
+							de personalizar a aparência e o comportamento do sistema operacional.
+						</li><br>
+						<li><strong id="titulo">Comunidade:</strong> O Linux é mantido por uma comunidade de desenvolvedores e
+							usuários que contribuem com o
+							desenvolvimento e aprimoramento contínuo do sistema operacional. Como resultado, existem
+							muitas
+							fontes de suporte e ajuda disponíveis online.
+						</li><br>
+						<li><strong id="titulo">Ataques de engenharia social:</strong> um ataque em que o invasor usa táticas de
+							persuasão ou manipulação para obter informações confidenciais dos usuários, como senhas,
+							números de cartão de crédito ou dados pessoais.
+						</li><br>
+						<li><strong id="titulo">resumo:</strong> Em resumo, o Linux é um sistema operacional poderoso e flexível que
+							oferece muitas opções para
+							usuários avançados. Se você estiver interessado em usar o Linux, vale a pena experimentá-lo
+							em
+							uma máquina virtual ou em um sistema dual-boot para se familiarizar com ele antes de fazer a
+							mudança completa.
+						</li><br>
+					</ul>
+					<ul>
+						<p id="titulo"><strong>Comandos para navegação e manipulação de arquivos e diretórios:</strong></p>
+						<li><strong>ls</strong> - lista o conteúdo do diretório atual</li>
+						<li><strong>cd</strong> - muda o diretório atual para o diretório especificado</li>
+						<li><strong>pwd</strong> - exibe o caminho absoluto do diretório atual</li>
+						<li><strong>mkdir</strong> - cria um novo diretório com o nome especificado</li>
+						<li><strong>rm</strong> - remove um arquivo ou diretório (usando a opção -r para diretórios)
+						</li>
+						<li><strong>cp</strong> - copia um arquivo ou diretório para o destino especificado</li>
+						<li><strong>mv</strong> - move ou renomeia um arquivo ou diretório para o destino especificado
+						</li>
+					</ul>
+
+					<ul>
+						<p id="titulo"><strong>Comandos para visualização e edição de arquivos:</strong></p>
+						<li><strong>cat</strong> - exibe o conteúdo de um arquivo</li>
+						<li><strong>nano</strong> - abre o editor de texto nano para editar um arquivo</li>
+					</ul>
+
+					<ul>
+						<p id="titulo"><strong>Comandos para criar e modificar arquivos e diretórios:</strong></p>
+						<li><strong>touch</strong> - cria um arquivo vazio com o nome especificado</li>
+						<li><strong>chmod</strong> - modifica as permissões de acesso de um arquivo ou diretório</li>
+					</ul>
+
+					<ul>
+						<p id="titulo"><strong>Comandos para gerenciamento de usuários e grupos:</strong></p>
+						<li><strong>usermod</strong> - modifica as informações do usuário especificado</li>
+						<li><strong>adduser</strong> - adiciona um novo usuário ao sistema</li>
+						<li><strong>sudo groupadd</strong> - adiciona um novo grupo ao sistema</li>
+						<li><strong>passwd</strong> - modifica a senha do usuário atual ou especificado</li>
+					</ul>
+
+					<ul>
+						<p id="titulo"><strong>Outros comandos importantes:</strong></p>
+						<li><strong>man</strong> - exibe o manual completo do comando especificado</li>
+						<li><strong>comando --help</strong> - exibe informações resumidas sobre o comando especificado
+						</li>
+						<li><strong>su</strong> - troca para o usuário especificado (normalmente o root)</li>
+						<li><strong>apt update</strong> - atualiza a lista de pacotes disponíveis no repositório</li>
+						<li><strong>apt upgrade</strong> - atualiza os pacotes instalados no sistema para a versão mais
+							recente</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<script>
+  const filtroTitulo = document.querySelector('#filtro-titulo');
+  const titulos = document.querySelectorAll('#titulo');
+
+  filtroTitulo.addEventListener('input', () => {
+    const filtro = filtroTitulo.value.toLowerCase();
+    titulos.forEach(titulo => {
+      if (titulo.innerText.toLowerCase().includes(filtro)) {
+        titulo.parentNode.style.display = 'block';
+      } else {
+        titulo.parentNode.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+<style>
+	body {
+		font-family: 'Roboto Slab', serif;
+		font-family: Roboto, sans-serif;
+	}
+
+	.list-group-item:hover {
+		background-color: #6f42c1;
+		color: #fff;
+	}
+</style>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Exemplo de NavBar com Bootstrap</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: #f2f2f2;">
+	<div th:replace="fragments/navbar :: navbar"></div>
+	<div class="container-fluid">
+		<div class="row">
+			<div th:replace="fragments/aside :: aside"></div>
+			<div class="card ml-5 col-8 mt-3 p-0">
+				<div class="card-header">
+					<h1>Sites</h1>
+				</div>
+				<div class="mt-4">
+					<ul>
+						<li><a href="https://www.securityweek.com/">SecurityWeek</a> - Um site de notícias e informações
+							sobre segurança cibernética com foco em vulnerabilidades, ameaças e soluções de segurança.
+						</li><br>
+						<li><a href="https://www.darkreading.com/">Dark Reading</a> - Um site de notícias sobre
+							segurança cibernética que cobre as últimas tendências, ameaças e soluções de segurança.
+						</li><br>
+						<li><a href="https://threatpost.com/">Threatpost</a> - Um site de notícias sobre segurança
+							cibernética que fornece informações sobre as mais recentes ameaças, vulnerabilidades e
+							soluções de segurança.
+						</li><br>
+						<li><a href="https://krebsonsecurity.com/">Krebs on Security</a> - Um blog de segurança
+							cibernética escrito por Brian Krebs, um jornalista de segurança cibernética que cobre
+							notícias sobre ciberataques, ameaças e soluções de segurança.
+						</li><br>
+						<li><a href="https://www.infosecurity-magazine.com/">Infosecurity Magazine</a> - Um site de
+							notícias sobre segurança cibernética que fornece informações sobre ameaças, tendências e
+							soluções de segurança.
+						</li><br>
+						<li><a href="https://www.sans.org/">SANS Institute</a> - Um instituto de treinamento em
+							segurança cibernética que oferece cursos, certificações e recursos para profissionais de
+							segurança cibernética.
+						</li><br>
+						<li><a href="https://thehackernews.com/">The Hacker News</a> - Um site de notícias sobre
+							segurança cibernética que cobre as últimas tendências, vulnerabilidades e ameaças, bem como
+							notícias sobre hacking ético e pesquisa em segurança.
+						</li><br>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<style>
+	body {
+		font-family: 'Roboto Slab', serif;
+		font-family: Roboto, sans-serif;
+	}
+
+	.list-group-item:hover {
+		background-color: #6f42c1;
+		color: #fff;
+	}
+</style>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Principais Ataques</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: #f2f2f2;">
+	<div th:replace="fragments/navbar :: navbar"></div>
+	<div class="container-fluid">
+		<div class="row">
+			<div th:replace="fragments/aside :: aside"></div>
+			<div class="card ml-5 col-8 mt-3 p-0">
+				<div class="card-header">
+					<h1>Principais Ataques</h1>
+				</div>
+				<div class="mt-4">
+					<p class="ml-4">Tipos comuns de ataques cibernéticos</p>
+					<ul>
+						<li><strong>Phishing:</strong> um ataque que usa e-mails falsificados ou páginas da web para
+							enganar os usuários a fornecer informações pessoais ou credenciais de login.
+						</li><br>
+						<li><strong>Malware:</strong> um software malicioso que pode se infiltrar em um sistema sem o
+							conhecimento do usuário e realizar ações maliciosas, como roubo de dados, criptografia de
+							arquivos ou destruição do sistema.
+						</li><br>
+						<li><strong>Denial-of-Service (DoS) e Distributed Denial-of-Service (DDoS):</strong> ataques que
+							tentam sobrecarregar um sistema ou rede com tráfego excessivo para torná-lo inacessível aos
+							usuários legítimos.
+						</li><br>
+						<li><strong>Man-in-the-Middle (MITM):</strong> um ataque em que um invasor intercepta a
+							comunicação entre dois dispositivos para obter informações confidenciais ou realizar ações
+							maliciosas.
+						</li><br>
+						<li><strong>SQL Injection:</strong> um ataque que aproveita falhas de segurança em aplicativos
+							web que usam bancos de dados para inserir código malicioso em consultas SQL para roubar
+							dados ou controlar o sistema.
+						</li><br>
+						<li><strong>Ransomware:</strong> um tipo de malware que criptografa arquivos do usuário e exige
+							um resgate em troca da chave de descriptografia.
+						</li><br>
+						<li><strong>Ataques de engenharia social:</strong> um ataque em que o invasor usa táticas de
+							persuasão ou manipulação para obter informações confidenciais dos usuários, como senhas,
+							números de cartão de crédito ou dados pessoais.
+						</li><br>
+						<li><strong>Ataques de zero-day:</strong> um ataque que explora uma vulnerabilidade desconhecida
+							em um sistema ou software para executar ações maliciosas antes que uma correção possa ser
+							implementada.
+						</li><br>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<style>
+	body {
+		font-family: 'Roboto Slab', serif;
+		font-family: Roboto, sans-serif;
+	}
+
+	.list-group-item:hover {
+		background-color: #6f42c1;
+		color: #fff;
+	}
+</style>
+
+</html>

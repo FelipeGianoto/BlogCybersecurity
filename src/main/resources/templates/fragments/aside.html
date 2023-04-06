@@ -1,0 +1,45 @@
+<div th:fragment="aside" class="col-3 p-0" style="background-color: #fff; height: 92vh; width: 60vh;">
+	<ul class="list-group">
+		<li class="list-group-item list-group-item-action" onclick="window.location.href='/cibersecurity/sites';">
+			<h6> Principais Sites de cybersecurity <i class="fa-solid fa-star"></i></h6>
+		</li>
+		<li class="list-group-item list-group-item-action" onclick="window.location.href='/nmap';">
+			<h6>Nmap Simulação</h6>
+		</li>
+		<li class="list-group-item list-group-item-action" onclick="window.location.href='/cibersecurity/pilares';">
+			<h6>Pilares da cibersegurança <i class="fa-solid fa-building-columns"></i></h6>
+		</li>
+		<li class="list-group-item list-group-item-action" onclick="window.location.href='/cibersecurity/ferramentas';">
+			<h6>Ferramentas de segurança cibernetica <i class="fa-solid fa-screwdriver-wrench"></i></h6>
+		</li>
+		<li class="list-group-item list-group-item-action" onclick="window.location.href='/cibersecurity/ataques';">
+			<h6>Principais Ataques <i class="fa-solid fa-terminal "></i></h6>
+		</li>
+		<li class="list-group-item list-group-item-action" onclick="window.location.href='/cibersecurity/conceitos';">
+			<h6>Conceitos de pentest <i class="fa-solid fa-bug"></i></h6>
+		</li>
+		<li class="list-group-item list-group-item-action" onclick="window.location.href='/cibersecurity/linux';">
+			<h6>Linux <i class="fa-brands fa-linux"></i></h6>
+		</li>
+		<li class="list-group-item list-group-item-action" onclick="window.location.href='/cibersecurity/redes';">
+			<h6>Rede <i class="fa-solid fa-network-wired"></i></h6>
+		</li>
+	</ul>
+
+	<script>
+		function toggleOptions() {
+			var options = document.getElementById("linux-options");
+			options.classList.toggle("show");
+		}
+	</script>
+
+	<style>
+		#linux-options {
+			display: none;
+		}
+
+		#linux-options.show {
+			display: block;
+		}
+	</style>
+</div>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Ferramentas Cybersegurança</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: #f2f2f2;">
+	<div th:replace="fragments/navbar :: navbar"></div>
+	<div class="container-fluid">
+		<div class="row">
+			<div th:replace="fragments/aside :: aside"></div>
+			<div class="card ml-5 col-8 mt-3 p-0">
+				<div class="card-header">
+					<h1>Ferramentas Cybersegurança</h1>
+				</div>
+				<div class="mt-4">
+					<ul class="list-group lista-portas">
+						<ul>
+							<li><strong>Nmap</strong> - Uma ferramenta de mapeamento de redes que pode ser usada para
+								descobrir hosts e
+								serviços em uma rede, bem como para identificar vulnerabilidades.
+							</li><br>
+							<li><strong>Metasploit</strong> - Uma plataforma de teste de penetração de código aberto que
+								pode ser usada para
+								desenvolver e executar exploits em sistemas vulneráveis.
+							</li><br>
+							<li><strong>Wireshark</strong> - Um analisador de protocolo de rede que pode ser usado para
+								capturar e analisar
+								pacotes de rede para fins de solução de problemas, segurança e análise de tráfego.
+							</li><br>
+							<li><strong>John the Ripper</strong> - Uma ferramenta de quebra de senha que pode ser usada
+								para descobrir senhas
+								de usuários de sistemas e aplicativos.
+							</li><br>
+							<li><strong>Gobuster</strong> - Uma ferramenta que pode ser usada para realizar ataques de
+								força bruta em URLs e
+								diretórios de um site.
+							</li><br>
+							<li><strong>Aircrack-ng</strong> - Uma ferramenta de quebra de senha de rede sem fio que
+								pode ser usada para
+								testar a segurança de redes sem fio.
+							</li><br>
+						</ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<style>
+	body {
+		font-family: 'Roboto Slab', serif;
+		font-family: Roboto, sans-serif;
+	}
+
+	.list-group-item:hover {
+		background-color: #6f42c1;
+		color: #fff;
+	}
+</style>
+
+</html>

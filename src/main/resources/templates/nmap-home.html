@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Exemplo de NavBar com Bootstrap</title>
+	<title>Nmap</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -23,7 +23,7 @@
 				<div class="col-6 mt-4">
 					<form method="post" th:action="@{/nmap}">
 						<label>IP:</label>
-						<input class="form-control" type="text" name="ip"><br>
+						<input class="form-control" type="text" name="ip" placeholder="127.0.0.1"><br>
 						<!--	<label>Porta:</label>
 						<input class="form-control" type="text" name="port"><br>-->
 						<button class="btn btn-secondary" type="submit">Verficar portas abertas</button>

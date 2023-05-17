@@ -2,12 +2,14 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title>Exemplo de NavBar com Bootstrap</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta charset="utf-8">
+<title>Exemplo de NavBar com Bootstrap</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+	integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body style="background-color: #f2f2f2;">
@@ -21,51 +23,115 @@
 				</div>
 				<div class="mt-4">
 					<ul>
-						<p>Protocolos de Rede </p>
-						<li><strong>TCP/IP</strong>: O protocolo TCP/IP é o padrão da Internet e é amplamente utilizado
-							para comunicação em redes locais e globais. É composto por dois protocolos principais, o TCP
-							(Transmission Control Protocol) e o IP (Internet Protocol).</li><br>
-						<li><strong>DNS</strong>: O protocolo DNS (Domain Name System) é usado para traduzir nomes de
-							domínio em endereços IP.</li><br>
-						<li><strong>DHCP</strong>: O protocolo DHCP (Dynamic Host Configuration Protocol) é usado para
-							atribuir dinamicamente endereços IP a dispositivos em uma rede.</li><br>
-						<li><strong>FTP</strong>: O protocolo FTP (File Transfer Protocol) é usado para transferir
-							arquivos entre computadores em uma rede.</li><br>
-						<li><strong>HTTP</strong>: O protocolo HTTP (Hypertext Transfer Protocol) é usado para
-							transferir páginas da web e outros conteúdos na internet.</li><br>
-						<li><strong>SMTP</strong>: O protocolo SMTP (Simple Mail Transfer Protocol) é usado para enviar
-							e-mails.</li><br>
-						<li><strong>SSH</strong>: O protocolo SSH (Secure Shell) é usado para acesso remoto seguro a
-							sistemas e dispositivos em uma rede.</li><br>
-						<li><strong>SSL/TLS</strong>: O protocolo SSL/TLS (Secure Sockets Layer/Transport Layer
-							Security) é usado para criptografar a comunicação entre servidores e clientes em redes, como
-							em transações bancárias online.</li><br>
+						<p>Protocolos de Rede</p>
+						<li><strong>TCP/IP</strong>: O protocolo TCP/IP é o padrão da
+							Internet e é amplamente utilizado para comunicação em redes
+							locais e globais. É composto por dois protocolos principais, o
+							TCP (Transmission Control Protocol) e o IP (Internet Protocol).</li>
+						<br>
+						<li><strong>DNS</strong>: O protocolo DNS (Domain Name
+							System) é usado para traduzir nomes de domínio em endereços IP.</li>
+						<br>
+						<li><strong>DHCP</strong>: O protocolo DHCP (Dynamic Host
+							Configuration Protocol) é usado para atribuir dinamicamente
+							endereços IP a dispositivos em uma rede.</li>
+						<br>
+						<li><strong>FTP</strong>: O protocolo FTP (File Transfer
+							Protocol) é usado para transferir arquivos entre computadores em
+							uma rede.</li>
+						<br>
+						<li><strong>HTTP</strong>: O protocolo HTTP (Hypertext
+							Transfer Protocol) é usado para transferir páginas da web e
+							outros conteúdos na internet.</li>
+						<br>
+						<li><strong>SMTP</strong>: O protocolo SMTP (Simple Mail
+							Transfer Protocol) é usado para enviar e-mails.</li>
+						<br>
+						<li><strong>SSH</strong>: O protocolo SSH (Secure Shell) é
+							usado para acesso remoto seguro a sistemas e dispositivos em uma
+							rede.</li>
+						<br>
+						<li><strong>SSL/TLS</strong>: O protocolo SSL/TLS (Secure
+							Sockets Layer/Transport Layer Security) é usado para criptografar
+							a comunicação entre servidores e clientes em redes, como em
+							transações bancárias online.</li>
+						<br>
 					</ul>
 
-					<p class="ml-5">Topologia: </p>
-					<div style="display:flex;justify-content: center;">
-						<img width="600px" height="500px" src="https://anlix.io/wp-content/uploads/2022/02/topologia-exempllo-1024x685.png">
+					<p class="ml-5">Topologia:</p>
+					<div style="display: flex; justify-content: center;">
+						<img width="600px" height="500px"
+							src="https://anlix.io/wp-content/uploads/2022/02/topologia-exempllo-1024x685.png">
 					</div>
+					<ul class="mt-5">
+						<h2>Explicação das Sete Camadas do Modelo OSI</h2>
+
+						<strong>1. Camada Física</strong>
+
+						<li>A camada física lida com a transmissão de bits brutos
+							pela rede. Ela define as características elétricas, mecânicas e
+							funcionais das interfaces de comunicação física, como cabos,
+							conectores e sinais elétricos. Seu objetivo é fornecer uma
+							conexão física confiável entre os dispositivos de rede.</li>
+						<strong>2. Camada de Enlace de Dados</strong>
+						<li>A camada de enlace de dados garante a transferência
+							confiável de dados entre dispositivos adjacentes em uma rede. Ela
+							lida com a detecção e correção de erros na camada física,
+							organiza os dados em quadros e controla o fluxo de dados para
+							evitar congestionamentos.</li>
+						<strong>3. Camada de Rede</strong>
+						<li>A camada de rede lida com o roteamento dos pacotes de
+							dados pela rede. Ela determina a melhor rota para enviar os
+							pacotes do dispositivo de origem para o destino, levando em
+							consideração fatores como congestionamento, prioridade e
+							endereçamento lógico dos dispositivos.</li>
+						<strong>4. Camada de Transporte</strong>
+						<li>A camada de transporte fornece um transporte confiável e
+							eficiente dos dados entre as máquinas de origem e destino. Ela
+							divide os dados em segmentos, adiciona informações de controle,
+							como números de sequência, para garantir a entrega adequada e
+							gerencia o controle de fluxo e a correção de erros.</li>
+						<strong>5. Camada de Sessão</strong>
+						<li>A camada de sessão estabelece, mantém e encerra as
+							sessões entre aplicativos em dispositivos diferentes. Ela permite
+							que aplicativos em dispositivos distintos estabeleçam uma conexão
+							lógica e coordenem a comunicação entre si, gerenciando a troca de
+							dados e o controle da conversação.</li>
+						<strong>6. Camada de Apresentação</strong>
+						<li>A camada de apresentação lida com a representação dos
+							dados. Ela traduz, criptografa e compacta os dados para garantir
+							que possam ser interpretados corretamente pelo destinatário. Além
+							disso, também lida com a compressão e decompressão de dados, caso
+							necessário.</li>
+						<strong>7. Camada de Aplicação</strong>
+						<li>A camada de aplicação é a camada mais próxima do usuário
+							final. Ela fornece serviços de rede para os aplicativos e permite
+							a interação direta entre o usuário e os serviços de rede. Essa
+							camada inclui protocolos para funções como correio eletrônico
+							(SMTP), transferência de arquivos (FTP), navegação na web (HTTP)
+							e muitos outros.</li>
 				</div>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 <style>
-	body {
-		font-family: 'Roboto Slab', serif;
-		font-family: Roboto, sans-serif;
-	}
+body {
+	font-family: 'Roboto Slab', serif;
+	font-family: Roboto, sans-serif;
+}
 
-	.list-group-item:hover {
-		background-color: #6f42c1;
-		color: #fff;
-	}
+.list-group-item:hover {
+	background-color: #6f42c1;
+	color: #fff;
+}
 </style>
 
 </html>
